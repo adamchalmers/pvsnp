@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#container {
+    margin: 40px auto;
+    max-width: 500px;
+    border: 1px dotted grey;
+    padding: 10px;
+}
+
+input {
+    width: 80%;
+}
+
+img {
+    margin: 0 10px 0 0;
+}
