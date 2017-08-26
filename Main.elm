@@ -21,8 +21,7 @@ init = (
 
 thoughts : Array String
 thoughts = A.fromList
-    [ ""
-    , "Synthesizing a prioris..."
+    [ "Synthesizing a prioris..."
     , "Consulting microtubules..."
     , "Connecting to oracle..."
     , "Interacting with proof..."
@@ -42,7 +41,7 @@ update msg model = case msg of
     Reset ->
         ({ model | state = Initial }, Cmd.none)
     Tick t ->
-        if secondsPassed t 1
+        if model.state == Thinking && (secondsPassed t 1)
         then if model.thought == numThoughts - 1
             then ({model | state = Results}, Cmd.none)
             else ({ model | thought = model.thought + 1}, Cmd.none)

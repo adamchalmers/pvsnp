@@ -8,6 +8,7 @@ h1 {
 
 h2 {
     text-align: center;
+    color: firebrick;
 }
 
 #container {
@@ -23,4 +24,15 @@ input {
 
 img {
     margin: 0 10px 0 0;
+}
+
+a {
+    color: firebrick;
+}
+
+#footer {
+    font-size: 10px;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
 }
