@@ -55,8 +55,7 @@ view : Model -> Html Msg
 view model =
     div []
         [ div [ id "container" ] <|
-            [ stylesheet
-            , h1 [] [text "Has P = NP been solved yet?"]
+            [ h1 [] [text "Has P = NP been solved yet?"]
             ] ++ (gui model)
         , p [ id "footer" ]
             [ text "Made by "
