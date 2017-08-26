@@ -8874,27 +8874,8 @@ var _user$project$Main$gui = function (model) {
 						{ctor: '[]'},
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html$text('This paper does not, in fact, prove P = NP. A full report has been generated '),
-							_1: {
-								ctor: '::',
-								_0: A2(
-									_elm_lang$html$Html$a,
-									{
-										ctor: '::',
-										_0: _elm_lang$html$Html_Attributes$href('https://www.scottaaronson.com/blog/?p=304'),
-										_1: {ctor: '[]'}
-									},
-									{
-										ctor: '::',
-										_0: _elm_lang$html$Html$text('here'),
-										_1: {ctor: '[]'}
-									}),
-								_1: {
-									ctor: '::',
-									_0: _elm_lang$html$Html$text('.'),
-									_1: {ctor: '[]'}
-								}
-							}
+							_0: _elm_lang$html$Html$text('Our analysis algorithm has generated the following Bayesian prediction: the URL that you provided does not, in fact, point to a solution to the P vs. NP problem.'),
+							_1: {ctor: '[]'}
 						}),
 					_1: {ctor: '[]'}
 				}
@@ -8923,7 +8904,7 @@ var _user$project$Main$view = function (model) {
 							{ctor: '[]'},
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html$text('Has P = NP been solved yet?'),
+								_0: _elm_lang$html$Html$text('Has P vs. NP been solved yet?'),
 								_1: {ctor: '[]'}
 							}),
 						_1: {ctor: '[]'}
@@ -8940,63 +8921,25 @@ var _user$project$Main$view = function (model) {
 					},
 					{
 						ctor: '::',
-						_0: _elm_lang$html$Html$text('Made by '),
+						_0: _elm_lang$html$Html$text('Elm source available '),
 						_1: {
 							ctor: '::',
 							_0: A2(
 								_elm_lang$html$Html$a,
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$href('twitter.com/adam_chal'),
+									_0: _elm_lang$html$Html_Attributes$href('https://github.com/adamchalmers/pvsnp'),
 									_1: {ctor: '[]'}
 								},
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('@adam_chal'),
+									_0: _elm_lang$html$Html$text('here'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {
 								ctor: '::',
-								_0: _elm_lang$html$Html$text(', with apologies to '),
-								_1: {
-									ctor: '::',
-									_0: A2(
-										_elm_lang$html$Html$a,
-										{
-											ctor: '::',
-											_0: _elm_lang$html$Html_Attributes$href('https://www.scottaaronson.com/blog'),
-											_1: {ctor: '[]'}
-										},
-										{
-											ctor: '::',
-											_0: _elm_lang$html$Html$text('Scott Aaronson'),
-											_1: {ctor: '[]'}
-										}),
-									_1: {
-										ctor: '::',
-										_0: _elm_lang$html$Html$text('. Source available '),
-										_1: {
-											ctor: '::',
-											_0: A2(
-												_elm_lang$html$Html$a,
-												{
-													ctor: '::',
-													_0: _elm_lang$html$Html_Attributes$href(''),
-													_1: {ctor: '[]'}
-												},
-												{
-													ctor: '::',
-													_0: _elm_lang$html$Html$text('here'),
-													_1: {ctor: '[]'}
-												}),
-											_1: {
-												ctor: '::',
-												_0: _elm_lang$html$Html$text('.'),
-												_1: {ctor: '[]'}
-											}
-										}
-									}
-								}
+								_0: _elm_lang$html$Html$text('.'),
+								_1: {ctor: '[]'}
 							}
 						}
 					}),

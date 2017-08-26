@@ -55,15 +55,11 @@ view : Model -> Html Msg
 view model =
     div []
         [ div [ id "container" ] <|
-            [ h1 [] [text "Has P = NP been solved yet?"]
+            [ h1 [] [text "Has P vs. NP been solved yet?"]
             ] ++ (gui model)
         , p [ id "footer" ]
-            [ text "Made by "
-            , a [href "twitter.com/adam_chal"] [text "@adam_chal"]
-            , text ", with apologies to "
-            , a [href "https://www.scottaaronson.com/blog"] [text "Scott Aaronson"]
-            , text ". Source available "
-            , a [href ""] [text "here"]
+            [ text "Elm source available "
+            , a [href "https://github.com/adamchalmers/pvsnp"] [text "here"]
             , text "."
             ]
         ]
@@ -88,10 +84,7 @@ gui model =
     Results ->
         [ h2 [] [text "NO"]
         , p []
-            [ text "This paper does not, in fact, prove P = NP. A full report has been generated "
-            , a [href "https://www.scottaaronson.com/blog/?p=304"] [text "here"]
-            , text "."
-            ]
+            [ text "Our analysis algorithm has generated the following Bayesian prediction: the URL that you provided does not, in fact, point to a solution to the P vs. NP problem."]
         ]
 
 stylesheet = node "link" [ attribute "rel" "stylesheet", attribute "property" "stylesheet", attribute "href" "style.css"] []
